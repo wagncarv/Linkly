@@ -1,0 +1,17 @@
+[0;1;31m●[0m postgresql-11.service - PostgreSQL 11 database server
+     Loaded: loaded (/usr/lib/systemd/system/postgresql-11.service; enabled; vendor preset: disabled)
+     Active: [0;1;31mfailed[0m (Result: exit-code) since Wed 2020-10-28 23:40:00 EDT; 21s ago
+       Docs: https://www.postgresql.org/docs/11/static/
+   Main PID: 21852 (code=exited, status=1/FAILURE)
+        CPU: 31ms
+
+out 28 23:40:00 localhost.localdomain postmaster[21852]: 2020-10-28 23:40:00.097 EDT [21852] LOG:  could not bind IPv6 address "::1": Endereço já em uso
+out 28 23:40:00 localhost.localdomain postmaster[21852]: 2020-10-28 23:40:00.097 EDT [21852] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+out 28 23:40:00 localhost.localdomain systemd[1]: [0;1;39m[0;1;31m[0;1;39mpostgresql-11.service: Main process exited, code=exited, status=1/FAILURE[0m
+out 28 23:40:00 localhost.localdomain postmaster[21852]: 2020-10-28 23:40:00.097 EDT [21852] LOG:  could not bind IPv4 address "127.0.0.1": Endereço já em uso
+out 28 23:40:00 localhost.localdomain postmaster[21852]: 2020-10-28 23:40:00.097 EDT [21852] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+out 28 23:40:00 localhost.localdomain postmaster[21852]: 2020-10-28 23:40:00.097 EDT [21852] WARNING:  could not create listen socket for "localhost"
+out 28 23:40:00 localhost.localdomain postmaster[21852]: 2020-10-28 23:40:00.105 EDT [21852] FATAL:  could not create any TCP/IP sockets
+out 28 23:40:00 localhost.localdomain postmaster[21852]: 2020-10-28 23:40:00.105 EDT [21852] LOG:  database system is shut down
+out 28 23:40:00 localhost.localdomain systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mpostgresql-11.service: Failed with result 'exit-code'.[0m
+out 28 23:40:00 localhost.localdomain systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start PostgreSQL 11 database server.[0m
